@@ -32,6 +32,7 @@ namespace Game.Domain
 
         public Guid Id { get; private set; }
 
+        [BsonIgnore]
         public IReadOnlyList<Player> Players => players.AsReadOnly();
 
         [BsonElement]
